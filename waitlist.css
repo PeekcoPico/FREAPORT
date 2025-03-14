@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+    margin: 0px;
+    background: #fafafc;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.navbar {
+    height: 35px;
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    grid-area: navbar;
+    margin-bottom: 1rem;
+}
+
+.footer {
+    height: 20px;
+    margin-top: auto;
+    padding: 2rem 0;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    grid-area: footer;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.home {
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    margin: 4rem;
+    border-radius: 1rem;
+    width: 15rem;
+}

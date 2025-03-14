@@ -166,6 +166,7 @@ thumbnail.png
 to_do.txt
 backend/media/upload
 backend/core/tests.py
+notes.txt
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can

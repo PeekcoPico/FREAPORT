@@ -1,14 +1,92 @@
 body {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #fafafc;
+}
+
+main {
+    flex-grow: 1;
+    margin: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #000000;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #B5C4F3;
-    color: #F5623D;
+    grid-area: main;
 }
 
-.main {
-    font-size: 15vw;
+.navbar {
+    height: 35px;
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    grid-area: navbar;
+    margin-bottom: 1rem;
 }
 
-.sub {
-    font-size: 6vw;
+.business,
+.university {
+    margin: 2rem 1rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 14px -3px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0px 0px 14px -3px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 14px -3px rgba(0,0,0,0.25);
+    
+}
+
+.waitlist {
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    width: 15rem;
+}
+
+.waitlist:hover{
+    transition: background-color 1s ease-in-out;
+    background-color: rgb(32, 32, 32);
+}
+
+.waitlist:hover ~ *{
+    filter: blur(2px);
+}
+
+main * {
+    transition: filter .5s ease-in-out;
+}
+
+.info{
+    font-size: 1.2rem;
+    grid-area: info;
+    margin: 1rem 0rem   ;
+    padding: 1rem 2rem;
+}
+
+.footer {
+    height: 40px;
+    padding: 1rem;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.section_header {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.section_list {
+    font-size: 1rem;
+    text-align: left;
 }
