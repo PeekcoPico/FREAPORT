@@ -72,12 +72,15 @@ main * {
 }
 
 .footer {
-    height: 40px;
-    padding: 1rem;
+    height: 20px;
+    margin-top: auto;
+    padding: 2rem 0;
     background: #000;
     color: #fff;
     text-align: center;
+    grid-area: footer;
     font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
 }
 
 .section_header {

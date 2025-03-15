@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WAITLIST</title>
     <link rel="icon" type="image/png"  href="image_assets/favicon2.png">
-    <link href="waitlist.css" rel="stylesheet">
+    <link href="waitlist.css" rel="stylesheet" defer>
+    <script src="waitlist.js" defer></script>
+    <style>
+        .form-container {display: none;}
+        .visible {display: block;}
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -13,12 +18,26 @@
         <hr>
     </nav>
     <main>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScV7j46FPwh34B43rPFeU2zr8FlM0hh9ZocWqO7ulfL-AXzLg/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <div class="togglebutton">
+            <div id="businessformstyle">
+                <input type="radio" name="formtoggle" value="businessform" checked>BUSINESSS WAITLIST
+            </div>
+            <br>
+            <div id="universityformstyle">
+                <input type="radio" name="formtoggle" value="universityform">UNIVERSITY WAITLIST
+            </div>
+        </div>
+        <div id="businessform" class="form-container visible">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScV7j46FPwh34B43rPFeU2zr8FlM0hh9ZocWqO7ulfL-AXzLg/viewform?embedded=true" width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+        <div id="universityform" class="form-container">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScRFOmJyl7l3_zcQqg-Db-mABaaJwbS8wxELO8BfKEMFgLyUQ/viewform?embedded=true" width="640" height="200" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
         <br>
         <button onclick="window.location.href='index.html'" class="home">HOME</button>
     </main>
     <div class="footer">
-        Contact us: FREAPORT@gmail.com
+        Contact us - OFFICIALFREAPORT@gmail.com
     </div>
 </body>
 </html>

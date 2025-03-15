@@ -16,7 +16,6 @@ main{
     font-size: 2rem;
     font-weight: bold;
     grid-area: navbar;
-    margin-bottom: 1rem;
 }
 
 .footer {
@@ -28,6 +27,7 @@ main{
     text-align: center;
     grid-area: footer;
     font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
 }
 
 .home {
@@ -39,4 +39,33 @@ main{
     margin: 4rem;
     border-radius: 1rem;
     width: 15rem;
+}
+
+.form-container iframe {
+    height: 80vh;
+    width: 40rem;
+    max-width: 100%;
+    border: none;
+}
+
+.togglebutton {
+    font-family: 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+    margin: 2rem;
+    height: 20px;
+    font-weight: bold;
+}
+
+.togglebutton div {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 1rem;
+}
+
+.togglebutton input[type="radio"] {
+    transform: scale(1.5);
+    cursor: pointer;
 }
