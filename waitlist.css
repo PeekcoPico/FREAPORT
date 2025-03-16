@@ -52,7 +52,7 @@ main{
     font-family: 'Helvetica Neue', sans-serif;
     display: flex;
     justify-content: center;
-    gap: 7rem;
+    gap: 4vw;
     margin: 2rem;
     height: 20px;
     font-weight: bold;
