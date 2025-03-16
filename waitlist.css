@@ -52,16 +52,18 @@ main{
     font-family: 'Helvetica Neue', sans-serif;
     display: flex;
     justify-content: center;
-    gap: 1vw;
+    gap: 1rem;
     margin: 2rem;
     height: 20px;
     font-weight: bold;
+    max-width: 100%;
+    flex-wrap: wrap;
 }
 
 .togglebutton div {
     display: flex;
     align-items: center;
-    gap: .5rem;
+    gap: .3rem;
     font-size: 1rem;
 }
 
