@@ -48,15 +48,22 @@ main{
     border: none;
 }
 
+.togglebuttoncentre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .togglebutton {
     font-family: 'Helvetica Neue', sans-serif;
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 4vw;
     margin: 2rem;
-    height: 20px;
+    height: 2vh;
     font-weight: bold;
-    max-width: 100%;
+    max-width: 60vw;
+    max-height: 3vh;
     flex-wrap: wrap;
 }
 
